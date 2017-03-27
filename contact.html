@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="utf=8" />
+      <title>Angie's Outdoors(Hiking and Military Surplus)</title>
+      <link rel="stylesheet" href="style.css" />
+      <style>
+			body {
+				font-family: sans-serif;
+			}
+      h4 #img{
+        text-align: center;
+      }
+			ul
+      {
+        text-align: center;
+				margin:0;
+				padding:0;
+
+        width:0px
+				list-style-type: none;
+			}
+			li {
+				display:inline-block;
+
+			}
+			li ul {
+				position:absolute;
+				width:250px;
+		    visibility:hidden;
+			}
+
+			li li {
+				display: inline-flex;
+        width: 0px;
+			}
+			li a {
+				background-color:lightgreen;
+				display:block;
+				padding:0.5em;
+			}
+			li a:hover{
+				background:red;
+			}
+
+			li:hover ul{
+				visibility:visible;
+			}
+			main{
+				clear: both;
+			}
+        footer #img{
+         float:left;;
+       }
+
+		</style>
+</head>
+<body>
+    <header>
+      <h1><img src="angies_outdoors.png" alt="Angies Outdoors" height="120" width="428" /></h1>
+      <p>Angie's Outdoors <br/>
+      Serving Barrie, Ontario and Area </p>
+
+    <div id = "nav">
+     <ul>
+         <li><a href="angiesoutdoors.html" title = " Home Page">Home</a></li>
+             <li><a href="menwomen.html"title = "Men Women Outdoor">Men &amp; Women Outdoors Clothing</a></li>
+             <li><a href="militarysurplus.html"title = "Military Surplus">Military Surplus</a></li>
+             <li><a href="menproducts1.html"title = " All Men Products">Men Products</a></li>
+             <li><a href="womenproducts.html"title = "All Products of Women">Women Products</a></li>
+             <li><a href="contact.html"title = "Contact Details">Contact Details</a></li>
+       </ul>
+     </div>
+   </header>
+     <div id="information" >
+        <h2> CONTACT PERSON : ANGELA BUDRAM</h2>
+        <h3>Email</h3>
+         <p>angiesoutdoors@outmail.com</p>
+     <div class="Hours of operation" >
+        <h3>Hours Of Operation:-</h3>
+        <table id="operation_hours" summary="Hours of Operation">
+          <tr>
+              <th style="padding-left: 5px;">Day</th>
+              <th style="padding-left: 5px;">Open</th>
+              <th style="padding-left: 5px;">Close</th>
+          </tr>
+          <tr>
+              <td>Sunday</td>
+              <td>11:00 am</td>
+              <td>05:00 pm</td>
+          </tr>
+
+          <tr>
+             <td>Monday</td>
+             <td>09:00 am</td>
+             <td>07:00 pm</td>
+         </tr>
+
+         <tr>
+            <td>Tuesday</td>
+            <td>09:00 am</td>
+            <td>07:00 pm</td>
+          </tr>
+
+        <tr>
+          <td>Wednesday</td>
+          <td>09:00 am</td>
+          <td>07:00 pm</td>
+        </tr>
+
+        <tr>
+          <td>Thursday</td>
+          <td>09:00 am</td>
+          <td>07:00 pm</td>
+        </tr>
+
+        <tr>
+          <td>Friday</td>
+          <td>09:00 am</td>
+          <td>07:00 pm</td>
+        </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>09:00 am</td>
+              <td>06:00 pm</td>
+            </tr>
+
+          </table>
+      </div>
+     <div id="Location" >
+       <h2>Location :-</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2851.1298169926235!2d-79.6893976852483!3d44.38945681252844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882aa32e8ef80aa9%3A0x2b6ed4d33c1a06ce!2sAngie&#39;s+Outdoor!5e0!3m2!1sen!2sca!4v1481943205729" width="1200" height="750" frameborder="0" style="border:0" allowfullscreen>
+            </iframe>
+        </div>
+          <div class= "Contact information" >
+              <h3>Languages Spoken</h3>
+              <p>English | Hindi | Urdu | Punjabi</p>
+
+          </div>
+          <form id="edit_payment_info" method="get" action="proceed-form.php">
+              <input type="hidden" name="form_sent" value="1" />
+                <fieldset>
+                  <legend>FeedBack Form </legend>
+              <div>
+                  <label for="fname">First Name</label>
+                  <input type="text" name="fname" id="fname" required maxlength="25" size="50"  placeholder="Type first name here." />
+              </div>
+              <div>
+                  <label for="lname">Last Name</label>
+                  <input type="text" name="lname" id="lname" required maxlength="25" size="50" placeholder="Type last name here." />
+              </div>
+                  <div>
+                      <label for="address">Address Line 1</label>
+                      <input id="address" type="text" name="address" required />
+                  </div>
+                <div>
+                      <label for="address2">Address Line 2</label>
+                      <input id="address2" type="text" name="address2" />
+                </div>
+                  <button type="submit" onclick="window.location.href='../comfirmartion.html'">Submit</button>
+              </fieldset>
+
+          </form>
+          <footer>
+              <div class="container" >
+                <div class="social" >
+                   <a href="http://www.facebook.com/154217841269461" target="_blank"><img src="facebook.png"></a>
+                     <a href="https://plus.google.com/104900160035373068326/about" target=""><img src="images.jpg" </a>
+                 </div>
+                 <div class="copyright">
+                  <h6>&copy; 2016 Angie's Outdoors. All Rights Reserved | Site Map | Terms &amp; Conditions | Privacy Policy </h6>
+          </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="utf=8" />
+      <title>Angie's Outdoors(Hiking and Military Surplus)</title>
+      <link rel="stylesheet" href="style.css" />
+      <style>
+     body {
+       font-family: sans-serif;
+     }
+      h4 #img{
+        text-align: center;
+      }
+     ul
+      {
+        text-align: center;
+       margin:0;
+       padding:0;
+
+        width:0px
+       list-style-type: none;
+     }
+     li {
+       display:inline-block;
+       padding-bottom: 8px;
+
+     }
+     li ul {
+       position:absolute;
+       width:250px;
+       visibility:hidden;
+     }
+
+     li li {
+       display: inline-flex;
+        width: 0px;
+     }
+
+     li a {
+       background-color:lightgreen;
+       display:block;
+       padding:0.3em;
+     }
+     li a:hover{
+       background:red;
+     }
+
+     li:hover ul{
+       visibility:visible;
+     }
+     main{
+       clear: both;
+     }
+        footer #img{
+         float:left;;
+       }
+       html {
+       	background-color: brown;
+       }
+       body {
+       	font-size: 100%;
+       	font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+       	color: #333;
+       	width: 760px;
+       	background-color: #FFF;
+       	margin: 20px auto;
+       	padding: 2em 2em 4em 2em;
+       	border-radius: 5px;
+       }
+       h1 {
+       	text-indent: -9999px;
+       	margin-top: 0;
+       	width: 200px;
+       	height: 50px;
+
+       }
+      fieldset #button {
+        text-align: center;
+       }
+       h2 {
+       	color: red;
+       }
+       fieldset {
+       	border: 1px solid #FFF;
+       	margin: 1em 0;
+       }
+       legend {
+       	font-size: 75%;
+       	text-transform: uppercase;
+       	color: #blue;
+       }
+       fieldset div {
+       	margin-bottom: 0.5em;
+       }
+       div label {
+       	display: block;
+       	width: 200px;
+       	float: left;
+       	text-align: right;
+       	padding-right: 1em;
+       }
+       input[required] {
+
+       }
+       label.error {
+       	color: red;
+       	float: right;
+       }
+       label img {
+       	vertical-align: middle;
+       }
+       small {
+       	font-size: 70%;
+       }
+   </style>
+</head>
+<body>
+    <header>
+      <h1><img src="angies_outdoors.png" alt="Angies Outdoors" height="120" width="428" /></h1>
+      <p>Angie's Outdoors <br/>
+      Serving Barrie, Ontario and Area </p>
+
+    <div id = "nav">
+     <ul>
+         <li><a href="angiesoutdoors.html" title="Home Page">Home</a></li>
+             <li><a href="menwomen.html"title="Men Women Outdoor">Men &amp; Women Outdoors Clothing</a></li>
+             <li><a href="militarysurplus.html"title="Military Surplus">Military Surplus</a></li>
+             <li><a href="menproducts1.html"title=" All Men Products">Men Products</a></li>
+             <li><a href="womenproducts.html"title="All Products of Women">Women Products</a></li>
+             <li><a href="contact.html"title="Contact Details">Contact Details</a></li>
+       </ul>
+     </div>
+   </header>
+		      <main>
+            <h2>Checkout Payment</h2>
+
+            <form id="edit_payment_info" method="get" action="proceed-form.php">
+                <input type="hidden" name="form_sent" value="1" />
+
+                  <fieldset>
+										<legend>Personal Information</legend>
+                <div>
+										<label for="fname">First Name</label>
+										<input type="text" name="fname" id="fname" required maxlength="25" size="50"  placeholder="Type first name here." />
+                </div>
+                <div>
+                    <label for="lname">Last Name</label>
+										<input type="text" name="lname" id="lname" required maxlength="25" size="50" placeholder="Type last name here." />
+                </div>
+
+                    <div>
+                        <label for="address">Address Line 1</label>
+                        <input id="address" type="text" name="address" required />
+                    </div>
+                    <div>
+                        <label for="address2">Address Line 2</label>
+                        <input id="address2" type="text" name="address2" />
+                    </div>
+                    <div>
+                        <label for="province">Province</label>
+                        <select id="province" name="province">
+                            <option value="choose">choose…</option>
+                            <option value="AB">Alberta</option>
+                            <option value="BC">British Colombia</option>
+                            <option value="ON">Ontario</option>
+                            <option value="MB">Manitoba</option>
+                            <option value="NB">New Brunswick</option>
+                            <option value="NL">Newfoundland</option>
+                            <option value="NT">Northwest Territories</option>
+                            <option value="NS">Nova Scotia</option>
+                            <option value="NV">Nunavut</option>
+                            <option value="PE">Prince Edward Island</option>
+                            <option value="PQ">Québec</option>
+                            <option value="SK">Saskatchewan</option>
+                            <option value="YK">Yukon Territory</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input id="phone" type="tel" name="phone" />
+                    </div>
+                    <div>
+                        <label for="email"></label>
+                        <input id="email" type="email" name="email" />
+                    </div>
+
+                    <div>
+											<label for="password"></label>
+											<input type="pssword" id="password" />
+
+
+					</div>
+                </fieldset>
+                <fieldset>
+
+				          <div>
+                        <label for="ccnumber">Credit Card Number</label>
+                        <input id="ccnumber" type="text" name="ccnumber" value="" />
+                    </div>
+                    <div>
+                        <label for="ccexpireyear">Expiration Year</label>
+												<select id="ccexpireyear" name="ccexpireyear">
+												<option value="2016">2016</option>
+											  <option value="2017">2017</option>
+												<option value="2018">2018</option>
+												<option value="2019">2019</option>
+												<option value="2020">2020</option>
+												</select>
+					          </div>
+                    <div>
+                        <label for="ccexpiremonth">Expiration Month</label>
+                        <select name="ccexpiremonth" id="ccexpiremonth">
+                            <option value="choose">choose…</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+
+
+                <button type="submit">Save Settings</button>
+                  </fieldset>
+            </form>
+        </main>
+        <footer>
+            <div class="container wrap" >
+              <div class="social" >
+                 <h6><a href="http://www.facebook.com/154217841269461" target="_blank"><img src="facebook.png"><p>Connect to Facebook.(click here)</a>
+                   <a href="https://plus.google.com/104900160035373068326/about" target=""><img src="images.jpg" height="60" width="60"><p>Connect to Google.(click here)</a> </h6>
+               </div>
+               <div class="copyright">
+                <p>&copy; 2016 Angie's Outdoors. All Rights Reserved | Site Map | Terms &amp; Conditions | Privacy Policy </p>
+
+        </div>
+      </div>
+      </body>
+ </html>
